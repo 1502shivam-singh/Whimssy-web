@@ -1,0 +1,64 @@
+@import url("http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css");
+
+@font-face {
+  font-family: "Moftein";
+  src: url("../fonts/Moftein.otf");
+}
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/Helvetica.ttf");
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: #ffefda;
+}
+
+.note {
+  font-size: 5rem;
+  font-family: Helvetica;
+  margin: 25px 0;
+}
+
+.post {
+  margin: 20px 0 0 0;
+  font-size: 1rem;
+  padding: 15px 25px;
+  border: 0;
+  font-family: Helvetica;
+  color: white;
+  background: rgb(236, 142, 142);
+  transition: background 0.3s ease-in-out;
+}
+.post:hover {
+  background: red;
+}
+
+.roomid {
+  /* margin-left: 12px; */
+  height: 2rem;
+  background: #fff0dd;
+  padding: 5px 10px;
+  outline: none;
+  border: 0;
+  width: 35%;
+  box-shadow: 5px 5px 69px rgb(255 0 0 / 20%);
+  color: #6c757d;
+  font-family: 'Helvetica';
+}
