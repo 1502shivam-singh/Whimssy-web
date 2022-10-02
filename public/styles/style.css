@@ -45,6 +45,7 @@ body {
   border: 0;
   font-family: Helvetica;
   color: white;
+  border-radius: 2.5px;
   background: rgb(236, 142, 142);
   transition: background 0.3s ease-in-out;
 }
