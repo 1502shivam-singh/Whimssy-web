@@ -5,15 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/styles/style.css">
-    <title>UPlayOnline</title>
+    <!-- <link rel="stylesheet" href="./public/styles/postStyle.css"> -->
+
+    <script src="https://kit.fontawesome.com/fe5ed12ca2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/styles/styles.css">
+    
+    <title>Whimssy</title>
 </head>
 <body>
-    <div class="root">
+    <!-- <div class="root">
         <h1 class="note">Game Session Data</h1>
         <input class="roomid" type="text">
         <button class="post" type="submit">POST Data</button>
+    </div> -->
+
+    <nav class="nav">
+        <div class="nav-inner">
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </nav>
+
+    <h1 class="title">FANCY SOME FINE CASUAL GAMING !</h1>
+
+    <div class="hero-section">
+        <p class="hero-text">
+            A hyper-casual game is a mobile video game which is easy-to-play, and usually free-to-play; they also feature very minimalistic user interfaces. A hyper-casual game is a mobile video game which is easy-to-play
+        </p>
+        <img class="hero-img" src="./dist/assets/imgs/hero.gif" alt="" srcset="">
     </div>
-    <script src="./main.js"></script>
+
+
+    <div class="game-showcase">
+        <div class="game sp-game">
+            <h4 class="game-title sp-game-title">SINGLE PLAYER</h4>
+            <div class="game-tiles sp-game-tiles">
+                <div class="game-tile sp-game-tile">
+                    <img class="game-thumb sp-game-thumb" src="./dist/assets/imgs/1.jpg" alt="LITTLE HILLS LIFE" srcset="">
+                    <p>LITTLE HILLS LIFE</p>
+                </div>
+                <div class="game-tile tile-r sp-game-tile">
+                    <img class="game-thumb sp-game-thumb" src="./dist/assets/imgs/2.jpg" alt="" srcset="">
+                    <p>DUSK</p>
+                </div>
+            </div>
+        </div>
+        <hr style="width: 0.1px;">
+        <div class="game mp-game">
+            <h4 class="game-title mp-game-title">MULTI PLAYER</h4>
+            <div class="game-tiles mp-game-tiles">
+                <div class="game-tile mp-game-tile">
+                    <img class="game-thumb mp-game-thumb" src="./dist/assets/imgs/3.jpg" alt="" srcset="">
+                    <p>VILLAGE SAW</p>
+                </div>
+                <div class="game-tile tile-r mp-game-tile">
+                    <img class="game-thumb mp-game-thumb" src="./dist/assets/imgs/4.jpg" alt="" srcset="">
+                    <p>HIGH ON LIFE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="carosel">
+        <div class="carosel-slide1">
+            <img class="carosel-img" src="./dist/assets/imgs/1.jpg">
+            <div class="slide-desc">
+                <h3 class="slide-desc-title">LITTLE HILLS LIFE</h3>
+                <h5 class="slide-desc-type">SINGLE PLAYER</h5>
+                <p class="slide-desc-abt">
+                    A hyper-casual game is a mobile video game which is easy-to-play, and usually free-to-play; they also feature very minimalistic user interfaces.
+                </p>
+            </div>
+        </div>
+        <!-- <div class="carosel-slide2">
+            <img src="./dist/assets/imgs/2.jpg">
+        </div>
+        <div class="carosel-slide3">
+            <img src="./dist/assets/imgs/3.jpg">
+        </div>
+        <div class="carosel-slide4">
+            <img src="./dist/assets/imgs/4.jpg">
+        </div> -->
+    </div>
+
+    <div class="footer">
+        Made for fun <span role="img" aria-label="stethoscope">🎈</span> by <span><a href="https://github.com/1502shivam-singh/" target="_blank" class="my-git">Shivam Singh</a></span>
+        <div class="social-links">
+          <a href="https://github.com/1502shivam-singh/" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="https://twitter.com/Shivam15_" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
