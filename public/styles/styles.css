@@ -9,6 +9,27 @@
   src: url("../fonts/Helvetica.ttf");
 }
 
+::-webkit-scrollbar {
+  width:5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 234, 234); 
+  border-radius: 0px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:rgb(252, 106, 106); 
+  border-radius: 1px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: red; 
+}
+
 html {
   width: 100%;
   height: 100%;
@@ -19,6 +40,7 @@ body {
   padding: 0;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .nav {
@@ -111,21 +133,53 @@ body {
 }
 
 .carosel {
-  margin: 5rem;
+  /* margin: 5rem; */
+  position: relative;
+  display: flex;
+  width: 400vw;
 }
 
-.carosel-slide1 {
+.controls {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+.control-left {
+  position: absolute;
+  left: 20px;
+}
+.control-right {
+  position: absolute;
+  right: 20px;
+}
+
+.carosel-slide-1, .carosel-slide-2, .carosel-slide-3, .carosel-slide-4 {
   display: flex;
   font-family: 'Julius Sans One', sans-serif;
   align-items: center;
   justify-content: center;
+  width: 100vw;
+  margin: 5rem;
+  box-sizing: border-box;
 }
 
 .carosel-img {
   width: 50vw;
-  height: auto;
+  /* height: auto; */
+  height: 50vw;
   padding: 3rem;
   box-sizing: border-box;
+}
+
+.container {
+  /* width: 400vw; */
+  display: flex;
+  overflow-x: hidden;
 }
 
 .slide-desc {
@@ -174,6 +228,10 @@ body {
 }
 
 @media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+  html {
+    overflow-x: hidden;
+  }
+  
   .nav-inner {
     width: 15vw;
   }
@@ -196,8 +254,8 @@ body {
 
   .hero-img {
     border-radius: 400px;
-    width: 25rem;
-    height: 25rem;
+    width: 24rem;
+    height: 24rem;
     padding: 2rem;
     box-sizing: border-box;
   }
@@ -212,12 +270,18 @@ body {
     object-fit: cover;
   }
 
-  .carosel-slide1 {
+  .game-tile {
+    /* padding: 0 4.5rem 0 0; */
+    margin: 0 1rem;
+  }
+
+  .carosel-slide-1, .carosel-slide-2, .carosel-slide-3, .carosel-slide-4 {
     flex-direction: column;
+    margin: 0;
   }
 
   .carosel {
-    margin: 2rem;
+    /* margin: 2rem; */
   }
 
   .carosel-img {
@@ -228,7 +292,15 @@ body {
   }
 
   .slide-desc {
-    padding: 2rem 0 0 0;
+    /* padding: 2rem 0 0 0; */
     box-sizing: border-box;
+  }
+
+  .arrow {
+    stroke: white;
+  }
+
+  .footer {
+    margin: 5rem 0 0;
   }
 }
