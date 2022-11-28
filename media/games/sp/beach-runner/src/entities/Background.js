@@ -5,8 +5,8 @@ Background = function(game) {
 Background.prototype = {
     create: function() {
         this.background = game.add.tileSprite(0, 0, game.world.width, 1363, 'background');
-        this.lavaGlow = game.add.tileSprite(0, game.world.height - 256, game.world.width, game.world.height, 'lava_glow');
-        this.lava = game.add.tileSprite(0, game.world.height - 96, game.world.width, game.world.height, 'lava');
+        this.lavaGlow = game.add.tileSprite(0, game.world.height - 256, game.world.width, game.world.height, 'water_glow');
+        this.lava = game.add.tileSprite(0, game.world.height - 96, game.world.width, game.world.height, 'water');
         this.walls = game.add.tileSprite(0, 0, game.world.width, game.world.height, 'rock_walls');
 
         game.add.tween(this.lava)

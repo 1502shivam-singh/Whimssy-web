@@ -11,14 +11,14 @@ var loadState = {
         game.load.setPreloadSprite(progressBar);
 
         //Let's load player stuff
-        game.load.image('player', 'assets/character/astronaut.png');
+        game.load.image('player', 'assets/character/surfer.png');
         game.load.spritesheet('jetpack_stream', 'assets/character/stream.png', 48, 45);
 
         //Let's load background stuff
         game.load.image('rock_walls', 'assets/background/rock_walls.png');
         game.load.image('background', 'assets/background/background.png');
-        game.load.image('lava', 'assets/background/lava.png');
-        game.load.image('lava_glow', 'assets/background/lava_glow.png');
+        game.load.image('water', 'assets/background/water.png');
+        game.load.image('water_glow', 'assets/background/water_glow.png');
 
         //Let's load the falling rocks I guess
         game.load.image('small_rock', 'assets/background/small_rock.png');

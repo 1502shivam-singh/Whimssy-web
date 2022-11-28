@@ -8,21 +8,24 @@ var creditsState = {
             fill: '#424242'
         });
         this.creator.anchor.setTo(0.5, 0.5);
-        this.creatorName = game.add.text(game.world.centerX, 230, 'Otto Robba', {
-            fill: '#fff',
-            fontSize: 48
-        });
-        this.creatorName.anchor.setTo(0.5, 0.5);
 
-        this.musicCreator = game.add.text(game.world.centerX, 400, 'Music by:', {
-            fill: '#424242'
-        });
-        this.musicCreator.anchor.setTo(0.5, 0.5);
-        this.musicCreatorName = game.add.text(game.world.centerX, 430, 'oyvind', {
+        this.creatorName1 = game.add.text(game.world.centerX, 230, 'Shivam Singh', {
             fill: '#fff',
             fontSize: 48
         });
-        this.musicCreatorName.anchor.setTo(0.5, 0.5);
+        this.creatorName1.anchor.setTo(0.5, 0.5);
+        
+        this.creatorName2 = game.add.text(game.world.centerX, 270, 'Raghav Sharma', {
+            fill: '#fff',
+            fontSize: 48
+        });
+        this.creatorName2.anchor.setTo(0.5, 0.5);
+       
+        this.creatorName3 = game.add.text(game.world.centerX, 310, 'Shashank Mingwal', {
+            fill: '#fff',
+            fontSize: 48
+        });
+        this.creatorName3.anchor.setTo(0.5, 0.5);
 
     },
 

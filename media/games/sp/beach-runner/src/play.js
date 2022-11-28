@@ -32,7 +32,7 @@ var playState = {
 
     defeat: function() {
         if (!this.hasLost) {
-            game.add.text(game.world.centerX, game.world.centerY + 100, 'Oh my! You exploded!', {
+            game.add.text(game.world.centerX, game.world.centerY + 200, 'Oh my! You drowned!', {
                 fontSize: 96,
                 fill: '#ffffff'
             }).anchor.setTo(0.5, 0.5);
