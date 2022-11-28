@@ -16,7 +16,8 @@ queue = <1, 2, 3, 4>
 */
 
 document.addEventListener('DOMContentLoaded', function(event) {
-    gsap.fromTo(".title", {
+    const tl = gsap.timeline();
+    tl.fromTo(".title", {
         opacity: 0,
         y: 100,
     }, {
@@ -25,8 +26,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         ease: "power3.inOut",
         duration: 1,
     })
-
-    gsap.fromTo(".hero-text", {
+    .fromTo(".hero-text", {
         opacity: 0,
         y: 100,
     }, {
@@ -34,10 +34,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
         y: 0,
         ease: "power3.inOut",
         duration: 1,
-        delay: 0.3,
-    });
-
-    gsap.fromTo(".hero-img", {
+    }, "-=0.6")
+    .fromTo(".cta", {
+        opacity: 0,
+    }, {
+        opacity: 1,
+        ease: "expo.out",
+        duration: 1.5,
+    },"-=0.1")
+    .fromTo(".hero-img", {
         opacity: 0,
         scale: 0,
     }, {
@@ -45,10 +50,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         scale: 1,
         ease: "expo.out",
         duration: 1.5,
-        delay: 1,
-    });
-
-
+    },"-=1");
 })
 
 let px = 0;
