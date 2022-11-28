@@ -270,8 +270,12 @@ body {
 
   .hero-text {
     width: 100vw;
-    padding: 2rem;
+    padding: 2rem 2rem 0rem 2rem;
     box-sizing: border-box;
+  }
+
+  .anchor-cta {
+    padding: 0 2rem;
   }
 
   .hero-img {
